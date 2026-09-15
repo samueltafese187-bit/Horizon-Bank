@@ -1,0 +1,36 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f3f6fa;color:#172033}button,input,select{font:inherit}button{cursor:pointer}.hidden{display:none!important}.login{min-height:100vh;display:grid;place-items:center;padding:20px;background:#eef4fb}.brand{position:absolute;top:35px;display:flex;gap:10px;align-items:center;color:#123f72}.brand>b,.sidebrand>b{background:#1264b1;color:white;padding:12px;border-radius:12px}.brand small{display:block;font-size:9px;color:#718096;letter-spacing:1px}.box{width:min(430px,100%);background:white;padding:32px;border-radius:20px;box-shadow:0 15px 50px #123f7218}.box h1{margin:0 0 8px}.box input,.box select{width:100%;padding:13px;margin:8px 0;border:1px solid #d5dfeb;border-radius:10px}.box form button,.primary{width:100%;padding:13px;background:#1264b1;color:white;border:0;border-radius:10px;margin-top:8px;font-weight:bold}.link{width:100%;border:0;background:none;color:#1264b1;padding:11px}.err{color:#c53030;font-size:13px;margin-top:8px;min-height:18px}#createMsg{color:#18804b;font-size:13px;margin-top:10px}.app{display:flex;min-height:100vh}.app aside{width:240px;background:#102e50;color:white;padding:20px;display:flex;flex-direction:column}.sidebrand{font-weight:bold;font-size:20px;margin-bottom:28px}.sidebrand b{margin-right:8px}.app nav{display:flex;flex-direction:column;gap:5px}.app nav button{border:0;background:none;color:#cbd8e8;text-align:left;padding:12px;border-radius:9px}.app nav button:hover{background:#ffffff15;color:white}.app hr{width:100%;border:0;border-top:1px solid #ffffff20;margin:15px 0}.logout{margin-top:auto;background:none;color:white;border:1px solid #ffffff30;padding:11px;border-radius:9px}main{flex:1;padding:30px 5%;overflow:auto}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}header small{color:#2670bc;font-weight:bold;letter-spacing:1px}header h2{margin:5px 0;font-size:30px}header span,#chip{background:white;padding:10px 14px;border-radius:10px;border:1px solid #e0e7ef}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid #e0e7ef;border-radius:16px;padding:20px}.balance{grid-column:span 2;background:#1264b1;color:white}.amount{font-size:34px;font-weight:bold;margin:12px 0}.muted,.label{color:#718096}.balance .label{color:#d5e7fa}.section{margin-top:18px}.table{width:100%;border-collapse:collapse;background:white}.table th,.table td{padding:12px;border-bottom:1px solid #edf1f5;text-align:left;font-size:13px}.in{color:#18804b}.out{color:#c53030}.pill{background:#edf5ff;color:#1264b1;padding:4px 8px;border-radius:15px;font-size:11px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.info{background:#f6f8fb;padding:14px;border-radius:10px}.info input,.info select{width:100%;padding:11px;border:1px solid #d5dfeb;border-radius:9px;margin-top:6px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.bankcard{height:190px;border-radius:18px;padding:22px;background:#173e68;color:white;display:flex;flex-direction:column;justify-content:space-between}.admincards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}@media(max-width:800px){.app aside{width:70px}.sidebrand{font-size:0}.sidebrand b{font-size:16px}.app nav button{font-size:0}.app nav button:before{content:"•";font-size:20px}.grid,.formgrid,.cards,.admincards{grid-template-columns:1fr}.balance{grid-column:auto}main{padding:20px}}
+/* Working light/dark themes */
+body.theme-light, body.theme-light .app main { background:#f3f6fa; color:#172033; }
+body.theme-dark, body.theme-dark .app main { background:#071a33; color:#edf4ff; }
+body.theme-dark .app aside { background:#041225; }
+body.theme-dark header span, body.theme-dark #chip,
+body.theme-dark .card, body.theme-dark .table, body.theme-dark .info {
+  background:#0d2a4d; color:#edf4ff; border-color:#244769;
+}
+body.theme-dark .table th, body.theme-dark .table td { border-color:#244769; }
+body.theme-dark .info input, body.theme-dark .info select,
+body.theme-dark input, body.theme-dark select {
+  background:#071a33; color:#edf4ff; border-color:#315879;
+}
+body.theme-dark .muted, body.theme-dark .label { color:#b7c9dc; }
+body.theme-light .app main { background:#f3f6fa; color:#172033; }
+.theme-menu .theme-option.active { background:#1264b1; color:#fff; }
+.delete-card{margin-top:18px;border:1px solid #efb4b4;background:#fff7f7}
+.delete-card h3{color:#a22}
+body.theme-dark .delete-card{background:#321b22;border-color:#7b3d48}
+
+.create-account-page h1{margin-top:38px!important}
+
+.create-account-page h1{margin-top:42px!important}
+.theme-menu{margin-top:18px;padding-top:15px;border-top:1px solid #ffffff20;display:flex;flex-direction:column;gap:5px}
+.theme-menu span{font-size:12px;color:#9fb3c9;padding:5px 12px}
+.theme-option{border:0;background:none;color:#cbd8e8;text-align:left;padding:10px 12px;border-radius:9px;cursor:pointer}
+.theme-option:hover,.theme-option.active{background:#ffffff15;color:white}
+
+body.theme-light, body.theme-light .app main{background:#ffffff;color:#172033}
+body.theme-light .login{background:#ffffff}
+body.theme-dark, body.theme-dark .app main{background:#071a33;color:#edf4ff}
+body.theme-dark .app aside{background:#041225}
+body.theme-dark .box,body.theme-dark .card,body.theme-dark .table,body.theme-dark .info,
+body.theme-dark header span,body.theme-dark #chip{background:#0d2a4d;color:#edf4ff;border-color:#244769}
+body.theme-dark input,body.theme-dark select{background:#071a33;color:#edf4ff;border-color:#315879}
